@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Desktop Pals: a tiny pet for your Windows desktop</title>
+  <meta name="description" content="Desktop Pals is a free desktop pet for Windows that reacts as you type. Pick a pet, choose its color and outfit, and add a focus timer. Private by design.">
+  <meta property="og:title" content="Desktop Pals: a tiny pet for your Windows desktop">
+  <meta property="og:description" content="A small, friendly pet that taps its paws as you type. Six pets, any color, hats, a focus timer, and no tracking.">
+  <meta property="og:image" content="assets/icon.png">
+  <meta name="theme-color" content="#DCE8FF">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="assets/pet.css">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="nav">
+      <a class="brand" href="#"><img src="assets/icon.png" alt="">Desktop Pals</a>
+      <nav aria-label="Main">
+        <a href="#features">Features</a><a href="#how">How to use</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>A tiny pet for your Windows desktop.</h1>
+        <p class="lead">Desktop Pals sits in the corner of your screen, taps its paws as you type, and keeps you company while you work. Pick a pet, make it yours, and let it cheer you on.</p>
+        <div class="cta">
+          <!-- Replace STORE_LINK with your Microsoft Store URL after approval -->
+          <a class="btn primary" data-store href="STORE_LINK">Get it on Microsoft Store</a>
+          <a class="btn" href="#how">See how it works</a>
+        </div>
+        <p class="fine">Free · Windows 10 and 11 · No account needed</p>
+      </div>
+      <div class="demo" aria-label="Live demo">
+        <div class="stage">
+          <div class="win w1"></div><div class="win w2"></div>
+          <div id="demoPet"></div>
+          <div class="taskbar"><span></span><span></span><span></span><span></span></div>
+        </div>
+        <input id="tryit" type="text" placeholder="Type here and watch your pet" autocomplete="off" aria-label="Type to try the demo">
+        <div class="ctl"><b>Pet</b><div id="pets" class="chips"></div></div>
+        <div class="ctl"><b>Color</b><div id="colors" class="chips"></div></div>
+        <div class="ctl"><b>Outfit</b><div id="outfits" class="chips"></div></div>
+        <div class="ctl"><b>Season</b><div id="seasons" class="chips"></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="features"><div class="wrap">
+  <h2>Cute, but never in the way</h2>
+  <p class="muted">Everything below is built into the app, with no sign-up.</p>
+  <div class="grid">
+    <div class="card" style="--c:#7BC98B"><h3>Six pets, any color</h3><p>Sprout, Cat, Bear, Bunny, Frog and Ghost. Choose any color, size and opacity, and give your pet a name.</p></div>
+    <div class="card" style="--c:#F2B98C"><h3>Hats, glasses and scarves</h3><p>Crowns, party hats, sunglasses, bow ties and more. Mix and match them on any pet.</p></div>
+    <div class="card" style="--c:#CDBDF2"><h3>Seasonal skins</h3><p>Halloween, Winter and Spring outfits with falling embers, snow or petals.</p></div>
+    <div class="card" style="--c:#B7D8F5"><h3>Reacts as you type</h3><p>Paws tap with every key. Type fast and your pet gets excited. Pause for a while and it falls asleep.</p></div>
+    <div class="card" style="--c:#F7B2C4"><h3>A personality</h3><p>It yawns, stretches, looks around, hops, and strolls along the taskbar. Gentle, rare messages say good morning or remind you to rest.</p></div>
+    <div class="card" style="--c:#FFE08A"><h3>Focus timer</h3><p>Start a Pomodoro session and your pet works beside you, with the time left shown above its head.</p></div>
+    <div class="card" style="--c:#BDE8CF"><h3>Stickers and photos</h3><p>Save or copy a sticker of your pet, or make a little polaroid-style photo with a caption to share.</p></div>
+    <div class="card" style="--c:#E5604E"><h3>Stays out of the way</h3><p>Clicks pass straight through to your apps. Your pet can’t be dragged off screen or below the taskbar. Sounds are off by default.</p></div>
+  </div>
+</div></section>
+
+<section id="how" style="background:var(--card)"><div class="wrap">
+  <h2>How to use Desktop Pals</h2>
+  <ol class="steps">
+    <li><div><h3>Install and open it</h3><p class="muted">Get Desktop Pals from the Microsoft Store and open it from the Start menu.</p></div></li>
+    <li><div><h3>Make it yours</h3><p class="muted">The customize window opens the first time. Choose a pet, a color, an outfit, and a size. Type in the “Try it out” box to see it react.</p></div></li>
+    <li><div><h3>Close the window and get to work</h3><p class="muted">Your pet stays in the corner of your screen and reacts as you type in any app.</p></div></li>
+    <li><div><h3>Start a focus session</h3><p class="muted">Right-click the tray icon (the small green dot near the clock, possibly under the ^ arrow) and choose “Start focus session”, or use the Focus tab.</p></div></li>
+  </ol>
+  <h2 style="margin-top:40px">Things you can do</h2>
+  <table>
+    <tr><th>Type anywhere</th><td>Your pet taps its paws. Type fast and it gets excited.</td></tr>
+    <tr><th>Stop for a while</th><td>It falls asleep after 30 seconds by default. You can change this or turn it off.</td></tr>
+    <tr><th>Click your pet</th><td>It says something friendly (if speech bubbles are on).</td></tr>
+    <tr><th>Drag your pet</th><td>Move it anywhere. It stays on screen and above the taskbar, and remembers where you left it.</td></tr>
+    <tr><th>Double-click your pet</th><td>Opens the customize window.</td></tr>
+    <tr><th>Tray icon menu</th><td>Customize, start or stop a focus session, show or hide your pet, reset its position, or quit.</td></tr>
+    <tr><th>Share tab</th><td>Save a transparent sticker, copy it to paste into a chat, or save a captioned photo.</td></tr>
+  </table>
+</div></section>
+
+<section id="privacy"><div class="wrap"><div class="callout">
+  <h2>Private by design</h2>
+  <p>To react as you type, Desktop Pals counts key presses. <strong>It never reads which keys you press, never records what you type, and never sends anything over the internet.</strong> There are no accounts, ads or analytics. Your choices are saved on your own PC.</p>
+  <a class="btn" href="privacy.html">Read the privacy policy</a>
+</div></div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <h2>Questions</h2>
+  <details><summary>Is Desktop Pals free?</summary><p>Yes. There are no ads, accounts, or in-app purchases.</p></details>
+  <details><summary>Does it record what I type?</summary><p>No. It only counts that a key was pressed so your pet can animate. It cannot tell which key it was, and nothing about your typing is stored or sent anywhere.</p></details>
+  <details><summary>Why does it need to watch my keyboard?</summary><p>So your pet can react when you type in any app, not just its own window. The listener only counts presses.</p></details>
+  <details><summary>Will it block my clicks?</summary><p>No. Clicks pass straight through to the apps underneath. Only the pet itself can be clicked or dragged.</p></details>
+  <details><summary>Where is the settings window, and how do I quit?</summary><p>Double-click your pet, or find the small green dot in the system tray near the clock (it may be under the ^ arrow). Right-click it for the menu, which includes Quit.</p></details>
+  <details><summary>Does it work with more than one monitor?</summary><p>Yes. Drag it to any screen. It stays on screen and above that screen’s taskbar.</p></details>
+  <details><summary>It appears over my full-screen game or video. What can I do?</summary><p>Your pet floats above other windows. Right-click the tray icon and untick “Show pet” while you play or watch, then tick it again afterwards.</p></details>
+  <details><summary>Can I turn off the wandering, speech or reactions?</summary><p>Yes. The Behavior tab lets you switch off idle antics, strolling, speech bubbles and gentle reactions. Sounds are off until you turn them on.</p></details>
+  <details><summary>What do I need to run it?</summary><p>A PC running Windows 10 or 11.</p></details>
+  <details><summary>Is there a Mac or Linux version?</summary><p>Not yet. Desktop Pals is Windows only for now.</p></details>
+  <details><summary>How do I uninstall it?</summary><p>Open Windows Settings, go to Apps, find Desktop Pals, and choose Uninstall.</p></details>
+  <details><summary>How do I send feedback or report a bug?</summary><p>Email <a href="mailto:workwithadibaa@gmail.com">workwithadibaa@gmail.com</a>. We’d love to hear which pet you picked.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 Desktop Pals</span>
+  <span><a href="privacy.html">Privacy policy</a> · <a href="mailto:workwithadibaa@gmail.com">Contact</a></span>
+</div></footer>
+
+<script src="assets/pets.js"></script>
+<script src="assets/pet-view.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
