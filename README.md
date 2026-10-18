@@ -4,9 +4,6 @@
 
 Desktop Pals is a cozy desktop companion app that brings adorable virtual pets to your Windows desktop. Designed with a soft, playful aesthetic, it makes your workspace feel a little warmer while you study, work, or relax.
 
-<p align="center">
-  <img src="assets/desktop-pals-logo.png" alt="Desktop Pals logo" width="320" />
-</p>
 
 <p align="center">
   <strong>Cute companions. Cozy vibes. A happier desktop.</strong>
